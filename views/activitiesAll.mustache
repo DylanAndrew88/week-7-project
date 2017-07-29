@@ -1,0 +1,44 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stattracker API</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="mainTitle">Stattracker API</div>
+      <div class="form">
+        <div class="title1">Track a new activity</div>
+        <div class="title2">input your activity here</div>
+        <form action="/api/activities" method="post">
+      <fieldset>
+        <div class="label">
+          <label for="name">Name of Activity</label>
+          <input required type="text" name="name" placeholder="ex. ride a bike">
+        </div>
+        <div class="label">
+          <label for="quantity">Quantity</label>
+          <input type="text" name="quantity" placeholder="#">
+        </div>
+      </div>
+      </fieldset>
+      <div class="form-submit">
+        <button type="submit">Enter</button>
+      </div>
+    </form>
+    <br>
+      <div class="list">
+        <div class="title1">All activities</div>
+          <div class="activities">
+          {{#activities}}
+          <a name="id" value="{{_id}}" href="/api/activities/id/{{id}}">{{name}}</a>
+          {{/activities}}
+        </div>
+      </div>
+    </div>
+
+  </body>
+  </html>
