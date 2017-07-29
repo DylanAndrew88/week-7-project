@@ -1,7 +1,7 @@
 {
   "name": "week-7-project",
   "version": "1.0.0",
-  "description": "Restful API using mongodb, mongoose, express, and node",
+  "description": "Restful, stat-tracking API using mongodb, mongoose, express, and node",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
